@@ -1,9 +1,9 @@
 <template>
-    <div class="modal-overlay" @click.self="$emit('close')">
+    <div class="modal-overlay">
         <div class="modal-content">
             <div class="modal-header">
                 <h3>{{ isEdit ? 'Edit Server' : 'Add New Server' }}</h3>
-                <button @click="$emit('close')" style="background: none; color: white; font-size: 1.2em;">&times;</button>
+                <button @click="$emit('close')" style="background: none; color: white; font-size: 2em;">&times;</button>
             </div>
             
             <form @submit.prevent="submit">
